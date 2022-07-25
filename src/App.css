@@ -2,6 +2,14 @@
    font-family: 'Pretendard', sans-serif;
 }
 
+img {
+   -webkit-user-drag: none;
+   -webkit-touch-callout: none;
+   -webkit-user-select: none;
+   -ms-user-select: none;
+   user-select: none;
+}
+
 .header {
    display: flex;
    background-color: #20232A;
@@ -11,6 +19,7 @@
    padding: 12px 0;
    position: fixed;
    width: 100%;
+   z-index: 4;
 }
 
 .header .logo {
@@ -66,7 +75,7 @@
    display: flex;
 }
 
-.bg{
+.bg {
    position: absolute;
    display: flex;
    width: 600px;
@@ -96,13 +105,56 @@
    z-index: 3;
 }
 
-.main{
+.section .button_wrap {
+   display: flex;
+   flex-direction: row;
+   font-size: 16px;
+   align-items: center;
+   justify-content: center;
+   gap: 24px;
+}
+
+.section .button_wrap .get_started {
+   display: flex;
+   padding: 10px 20px;
+   background-color: #60DAFB;
+   color: #272C34;
+   cursor: pointer;
+   transition-duration: 0.2s;
+}
+
+.section .button_wrap .get_started:hover {
+   background-color: white;
+   transition-timing-function: ease-in-out;
+}
+
+.section .button_wrap .tutorial {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+   gap: 5px;
+   color: #60DAFB;
+   transition-duration: 0.2s;
+}
+
+.section .button_wrap .tutorial span {
+   font-size: 16px;
+   display: flex;
+}
+
+.section .button_wrap .tutorial:hover {
+   color: white;
+   transition-timing-function: ease-in-out;
+}
+
+.main {
    text-align: center;
 }
 
-@media screen and (max-width:1024px)
-{
-   .bg{
+@media screen and (max-width:1024px) {
+   .bg {
       display: none;
    }
 }
