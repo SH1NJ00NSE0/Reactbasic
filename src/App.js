@@ -23,8 +23,7 @@ function App() {
             </ul>
          </div>
          <div className='section'>
-            <img className='bg' src='img/section_bgimg.svg'></img>
-            <h1 className='section_title'>React</h1>
+            <h1 className='section_title'>{titleName}</h1>
             <p className='section_description'>A JavaScript library for building user interfaces</p>
             <div className='button_wrap'>
                <div className='get_started'>Get Started</div>
@@ -35,19 +34,42 @@ function App() {
             </div>
          </div>
          <div className='main'>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
-            <h1>sfsfd</h1>
+            <div className='features'>
+               <div className='item'>
+                  <p className='feature'>Declarative</p>
+                  <p className='sub'>
+                     React makes it painless to create interactive UIs.
+                     Design simple views for each state in your application,
+                     and React will efficiently update and render
+                     just the right components when your data changes.
+                  </p>
+                  <p className='conclusion'>
+                     Declarative views make your code more predictable
+                     and easier to debug.
+                  </p>
+               </div>
+               <div className='item'>
+                  <p className='feature'>Component-Based</p>
+                  <p className='sub'>
+                     Build encapsulated components that manage their own state,
+                     then compose them to make complex UIs.
+                  </p>
+                  <p className='conclusion'>
+                     Since component logic is written in JavaScript instead of templates,
+                     you can easily pass rich data through your app and keep state out of the DOM.
+                  </p>
+               </div>
+               <div className='item'>
+                  <p className='feature'>Learn Once, Write Anywhere</p>
+                  <p className='sub'>
+                     We don’t make assumptions about the rest of your technology stack,
+                     so you can develop new features in React without rewriting existing code.
+                  </p>
+                  <p className='conclusion'>
+                     React can also render on the server using Node and power mobile apps using React Native.
+                  </p>
+               </div>
+            </div>
          </div>
       </div>
    );
