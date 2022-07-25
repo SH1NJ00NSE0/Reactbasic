@@ -1,38 +1,96 @@
-.App {
-  text-align: center;
+* {
+   font-family: 'Pretendard', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+   display: flex;
+   background-color: #20232A;
+   color: white;
+   flex-direction: row;
+   justify-content: space-around;
+   padding: 12px 0;
+   position: fixed;
+   width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header .logo {
+   display: flex;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.header .logo a {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   font-size: 25px;
+   font-weight: 600;
+   gap: 0px;
+   color: #60DAFB;
+   text-decoration: none;
+   transition-duration: 0.2s;
 }
 
-.App-link {
-  color: #61dafb;
+.header .logo a:hover {
+   transform: scale(110%);
+   transition-timing-function: ease-in-out;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.header .nav {
+   display: flex;
+   list-style: none;
+   gap: 40px;
+   margin: 0;
+}
+
+.header .nav li {
+   display: flex;
+   align-items: center;
+}
+
+.header .nav li a {
+   text-decoration: none;
+   color: white;
+   transition-duration: 0.2s;
+}
+
+.header .nav li a:hover {
+   transform: scale(110%);
+   transition-timing-function: ease-in-out;
+}
+
+.header .logo a img {
+   height: 30px;
+   display: flex;
+}
+
+.header .logo a .title {
+   display: flex;
+}
+
+.bg{
+   position: absolute;
+   display: flex;
+   height: 400px;
+   z-index: 1;
+   opacity: 5%;
+   top: 25%;
+   right: 25%;
+}
+
+.section {
+   text-align: center;
+   padding: 80px;
+   background-color: #272C34;
+}
+
+.section .section_title {
+   color: #60DAFB;
+   font-size: 80px;
+   margin: 30px 0;
+   z-index: 3;
+}
+
+.section .section_description {
+   color: white;
+   font-size: 25px;
+   z-index: 3;
 }
