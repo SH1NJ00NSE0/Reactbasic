@@ -69,11 +69,11 @@
 .bg{
    position: absolute;
    display: flex;
-   height: 400px;
+   height: 80%;
    z-index: 1;
    opacity: 5%;
-   top: 25%;
-   right: 25%;
+   top: 15%;
+   right: 10%;
 }
 
 .section {
@@ -93,4 +93,11 @@
    color: white;
    font-size: 25px;
    z-index: 3;
+}
+
+@media screen and (max-width:1024px)
+{
+   .bg{
+      display: none;
+   }
 }
