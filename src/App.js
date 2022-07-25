@@ -6,7 +6,7 @@ function App() {
 
    let titleName = 'React';
    let [num, renum] = useState(0);
-
+   let [value, calc] = useState(0);
    return (
       <div className="App">
          <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
@@ -91,7 +91,7 @@ function App() {
                   }}>Minus</span>
 
                   <span className='button' onClick={() => {
-                     renum(Math.pow(num,2));
+                     renum(Math.pow(num, 2));
                   }}>square</span>
 
                   <span className='button' onClick={() => {
@@ -101,6 +101,14 @@ function App() {
                <span className='display'>{num}</span>
             </div>
 
+            <div className='contaioner'>
+               <form className='calculator' name='calc'>
+                  <input type="text" className='value' readOnly name='txt' />
+                  <span className='num' onClick={() => {
+                     calc.txt.value = '3';
+                  }}><i>C</i></span>
+               </form>
+            </div>
          </div>
       </div>/*App div의 끝*/
    );
