@@ -24,7 +24,14 @@ function App() {
          <div className='section'>
             <img className='bg' src='img/section_bgimg.svg'></img>
             <h1 className='section_title'>React</h1>
-            <p className='section_description'>사용자 인터페이스를 만들기 위한 JavaScript 라이브러리</p>
+            <p className='section_description'>A JavaScript library for building user interfaces</p>
+         </div>
+         <div className='main'>
+            <h1>sfsfd</h1>
+            <h1>sfsfd</h1>
+            <h1>sfsfd</h1>
+            <h1>sfsfd</h1>
+            <h1>sfsfd</h1>
          </div>
       </div>
    );
