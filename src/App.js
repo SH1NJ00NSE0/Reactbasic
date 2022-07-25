@@ -66,10 +66,12 @@ function App() {
                      so you can develop new features in React without rewriting existing code.
                   </p>
                   <p className='conclusion'>
-                     React can also render on the server using Node and power mobile apps using React Native.
+                     React can also render on the server using Node and power mobile apps using 
+                     <span>React Native.</span>
                   </p>
                </div>
             </div>
+            <hr></hr>
          </div>
       </div>
    );

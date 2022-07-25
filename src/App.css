@@ -7,8 +7,8 @@
    background-color: #20232A;
    color: white;
    flex-direction: row;
-   justify-content: space-around;
-   padding: 12px 0;
+   justify-content:space-around;
+   padding: 12px 0px;
    position: fixed;
    width: 100%;
    z-index: 4;
@@ -75,8 +75,8 @@
    background-color: #272C34;
    background-image: url(../public/img/section_bgimg.svg);
    background-repeat: no-repeat;
-   background-size: 650px;
-   background-position: 90% -50%;
+   background-size: 750px;
+   background-position: 100% -30%;
 }
 
 .section .section_title {
@@ -88,8 +88,9 @@
 
 .section .section_description {
    color: white;
-   font-size: 24px;
+   font-size: 32px;
    font-weight: 200;
+   margin-bottom: 60px;
    z-index: 3;
 }
 
@@ -139,13 +140,12 @@
 
 .main {
    z-index: 3;
-   padding-top: 80px;
 }
 
 .main .features {
    display: flex;
    margin: 0 auto;
-   padding: 0 20px;
+   padding: 80px 20px 0;
    width: 90%;
    max-width: 1220px;
    gap: 50px;
@@ -157,30 +157,50 @@
    width: 33.33%;
 }
 
-.main .features .item p{
+.main .features .item p {
    margin: 15px 0;
 }
 
-.main .features .item .feature{
+.main .features .item .feature {
    font-size: 24px;
    font-weight: 100;
    color: #6d6d6d;
 }
 
-.main .features .item .sub{
+.main .features .item .sub {
    font-size: 17px;
    font-weight: 300;
    line-height: 180%;
 }
 
-.main .features .item .conclusion{
+.main .features .item .conclusion {
    font-size: 17px;
    font-weight: 300;
    line-height: 180%;
+}
+
+.main .features .item .conclusion span {
+   cursor: pointer;
+   margin-left: 4px;
+   background-color: rgba(187, 239, 253, 0.3);
+   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.main .features .item .conclusion span:hover {
+   background-color: #bbeffd;
+   border-bottom-color: #1a1a1a;
 }
 
 @media screen and (max-width:1024px) {
-   .section{
+   .section {
       background-image: none;
    }
+}
+
+hr {
+   max-width: 1220px;
+   background-color: #ececec;
+   border: none;
+   height: 1px;
+   margin-top: 40px;
 }
