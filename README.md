@@ -20,4 +20,5 @@ https://reactjs.org/
 <h1 align='left'>Component</h1>
 <p>
   <h3>사용법 <br>1. function 만들기<br>2. return()의 소괄호 안에다가 html작성하기<br>3. <함수명> <함수명/>쓰기</h3>
+    <h4>이 때, 함수명 첫글자는 대문자로, 다른 함수와 병렬적으로</h4>
 </p>
