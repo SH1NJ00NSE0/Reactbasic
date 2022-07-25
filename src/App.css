@@ -7,7 +7,7 @@
    background-color: #20232A;
    color: white;
    flex-direction: row;
-   justify-content:space-around;
+   justify-content: space-around;
    padding: 12px 0px;
    position: fixed;
    width: 100%;
@@ -94,7 +94,7 @@
    z-index: 3;
 }
 
-.section .button_wrap {
+.section .link_wrap {
    display: flex;
    flex-direction: row;
    font-size: 16px;
@@ -103,7 +103,7 @@
    gap: 24px;
 }
 
-.section .button_wrap .get_started {
+.section .link_wrap .get_started {
    display: flex;
    padding: 10px 20px;
    background-color: #60DAFB;
@@ -112,12 +112,12 @@
    transition-duration: 0.2s;
 }
 
-.section .button_wrap .get_started:hover {
+.section .link_wrap .get_started:hover {
    background-color: white;
    transition-timing-function: ease-in-out;
 }
 
-.section .button_wrap .tutorial {
+.section .link_wrap .tutorial {
    display: flex;
    flex-direction: row;
    justify-content: center;
@@ -128,18 +128,19 @@
    transition-duration: 0.2s;
 }
 
-.section .button_wrap .tutorial span {
+.section .link_wrap .tutorial span {
    font-size: 16px;
    display: flex;
 }
 
-.section .button_wrap .tutorial:hover {
+.section .link_wrap .tutorial:hover {
    color: white;
    transition-timing-function: ease-in-out;
 }
 
 .main {
    z-index: 3;
+   padding-bottom: 200px;
 }
 
 .main .features {
@@ -203,4 +204,35 @@ hr {
    border: none;
    height: 1px;
    margin-top: 40px;
+}
+
+.state_test {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 30px;
+}
+
+.state_test .button_wrap {
+   display: flex;
+   flex-direction: row;
+   margin: 0 auto;
+   width: 100%;
+   align-items: center;
+   justify-content: center;
+   gap: 30px;
+}
+
+.state_test .button_wrap .button {
+   padding: 15px 25px;
+   background-color: #272C34;
+   color: white;
+   display: flex;
+   font-size: 16px;
+   border-radius: 46px;
+}
+
+.state_test .display {
+   display: flex;
+   font-size: 30px;
 }

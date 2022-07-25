@@ -1,9 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
 
 function App() {
 
    let titleName = 'React';
+   let [num, renum] = useState(0);
 
    return (
       <div className="App">
@@ -25,7 +27,7 @@ function App() {
          <div className='section'>
             <h1 className='section_title'>{titleName}</h1>
             <p className='section_description'>A JavaScript library for building user interfaces</p>
-            <div className='button_wrap'>
+            <div className='link_wrap'>
                <div className='get_started'>Get Started</div>
                <div className='tutorial'>
                   <span>Take the Tutorial</span>
@@ -66,14 +68,41 @@ function App() {
                      so you can develop new features in React without rewriting existing code.
                   </p>
                   <p className='conclusion'>
-                     React can also render on the server using Node and power mobile apps using 
+                     React can also render on the server using Node and power mobile apps using
                      <span>React Native.</span>
                   </p>
                </div>
             </div>
+
             <hr></hr>
+
+            <div className='state_test'>
+               <div className='button_wrap'>
+                  <span className='button' onClick={() => {
+                     renum(0);
+                  }}>Reset</span>
+
+                  <span className='button' onClick={() => {
+                     renum(num + 1);
+                  }}>Plus</span>
+
+                  <span className='button' onClick={() => {
+                     renum(num - 1);
+                  }}>Minus</span>
+
+                  <span className='button' onClick={() => {
+                     renum(Math.pow(num,2));
+                  }}>square</span>
+
+                  <span className='button' onClick={() => {
+                     renum(Math.sqrt(num));
+                  }}>root</span>
+               </div>
+               <span className='display'>{num}</span>
+            </div>
+
          </div>
-      </div>
+      </div>/*App div의 끝*/
    );
 }
 
