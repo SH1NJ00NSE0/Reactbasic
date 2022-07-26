@@ -100,14 +100,31 @@ function App() {
                </div>
                <span className='display'>{num}</span>
             </div>
+            <div className='body'>
+               <div className='container'>
+                  <form className='calculator' name='calc'>
+                     <input type="text" className='value' readOnly name='txt' />
+                     <span className='num clear'><i>C</i></span>
+                     <span className='num'><i>/</i></span>
+                     <span className='num'><i>*</i></span>
+                     <span className='num'><i>7</i></span>
+                     <span className='num'><i>8</i></span>
+                     <span className='num'><i>9</i></span>
+                     <span className='num'><i>-</i></span>
+                     <span className='num'><i>4</i></span>
+                     <span className='num'><i>5</i></span>
+                     <span className='num'><i>6</i></span>
+                     <span className='num plus'><i>+</i></span>
+                     <span className='num'><i>1</i></span>
+                     <span className='num'><i>2</i></span>
+                     <span className='num'><i>3</i></span>
+                     <span className='num'><i>0</i></span>
+                     <span className='num'><i>00</i></span>
+                     <span className='num'><i>.</i></span>
 
-            <div className='contaioner'>
-               <form className='calculator' name='calc'>
-                  <input type="text" className='value' readOnly name='txt' />
-                  <span className='num' onClick={() => {
-                     calc.txt.value = '3';
-                  }}><i>C</i></span>
-               </form>
+                     <span className='num equal'><i>=</i></span>
+                  </form>
+               </div>
             </div>
          </div>
       </div>/*App div의 끝*/
